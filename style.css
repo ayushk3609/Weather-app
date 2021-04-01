@@ -46,6 +46,7 @@ body {
     color: white;
     cursor: pointer;
     transition: 200 ease-in-out;
+    outline: none;
 }
 
 .btn i{
