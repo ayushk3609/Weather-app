@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    font-family: 'Mulish', sans-serif;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    font-size: 120%;
+  }
+  .container {
+    background:rgba(0, 0, 0, 0.733);
+    color: white;
+    padding: 1em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+  }
+
+  .searchbar{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .search {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 18px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+.btn {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 200 ease-in-out;
+}
+
+.btn i{
+    font-size: large;
+}
+
+.btn:hover{
+    background: #7c7c7c6b;
+}
+
+.place {
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 1vh;
+    font-size: 40px;
+    font-family: inherit;
+}
+
+.date {
+    text-align: center;
+}
+
+.temp{
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.img_container{
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    background-color: white;
+}
+
+.description{
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+.minmax{
+    text-align: center;
+    margin-top: 2vh;
+    font-size: small;
+}
+
+.load{
+    visibility:hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.load::after{
+    visibility: visible;
+    content:"Please wait...";
+    color: white;
+    position:absolute;
+    top: 0;
+    left: 20px;
+}
