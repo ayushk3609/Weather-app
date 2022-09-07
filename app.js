@@ -6,7 +6,7 @@ let weather = {
     ApiKey : "d3a196c7341ef656d592d0567e0fe58d",
     fetchWeather: function(city){
         fetch(
-            `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${this.ApiKey}`
+            `https://api.openweathermap.org/data/2.5/weather?q=${city?city:defaultCity}&units=metric&appid=${this.ApiKey}`
             ).then((result) => result.json())
             .then((data) => this.display(data));
     },
@@ -33,6 +33,7 @@ let weather = {
         this.fetchWeather(document.querySelector('.search').value);
     }
 };
+
 
 btn.addEventListener('click',function (){
     weather.search();
